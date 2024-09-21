@@ -88,7 +88,7 @@ span.psw {
 </style>
 </head>
 <body>
-<form action="/helloworld/login" method="post">
+<form action="/exercise01/login" method="post">
   <div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
