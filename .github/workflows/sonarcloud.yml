@@ -36,6 +36,7 @@ jobs:
       - name: Build and analyze with Maven
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-          -Dsonar.projectKey=cochecheee_servlet-login-register \
-          -Dsonar.organization=cochecheee
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar \
+            -Dsonar.projectKey=cochecheee_servlet-login-register \
+            -Dsonar.organization=cochecheee \
+            -Dsonar.token=${{ secrets.SONAR_TOKEN }}
