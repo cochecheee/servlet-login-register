@@ -23,7 +23,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B clean verify -U
 
-      - name: Run SonarQube Scan with JaCoCo
+      - name: Run SonarQube Scan with Maven
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: >
